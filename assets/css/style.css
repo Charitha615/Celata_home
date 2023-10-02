@@ -581,7 +581,7 @@ section {
 .section-bg {
   background-color: #f5f5ff;
 }
-
+/* Default styles for larger screens */
 .section-title {
   align-items: center;
   padding-bottom: 40px;
@@ -599,15 +599,7 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
-  content: "";
-  width: 100px;
-  height: 1px;
-  display: inline-block;
-  background: #1e0a8f;
-  margin: 4px 10px;
-}
-
+.section-title h2::after,
 .section-title h2::before {
   content: "";
   width: 100px;
@@ -626,6 +618,32 @@ section {
   font-family: "Poppins", sans-serif;
   color: #010483;
 }
+
+/* Media query for screens with a maximum width of 768px (typical for mobile) */
+@media (max-width: 768px) {
+  .section-title {
+      padding-bottom: 20px;
+      text-align: center; 
+  }
+
+  .section-title h2 {
+      font-size: 18px;
+  }
+
+  .section-title h2::after,
+  .section-title h2::before {
+      width: 0px;
+  }
+#sectitle{
+  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+}
+  .section-title p {
+      font-size: 18px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
