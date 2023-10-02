@@ -258,7 +258,8 @@
     padding-right: 30px;
     padding-bottom: 10px;
     padding-left: 30px;
-    background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb29.png");
+    /* background-color: #575a7b; */
+    /* background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb29.png"); */
     background-position-x: initial;
     background-position-y: initial;
     background-size: cover;
@@ -278,7 +279,7 @@
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-right: auto;
     margin-bottom: 150px;
     margin-left: auto;
