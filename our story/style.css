@@ -168,149 +168,167 @@
 
 
 
+/* Default styles for screens larger than or equal to 1024px */
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(https://medicalarrow.com/wp-content/uploads/2018/09/About-Us-1-1982x1024.jpg);
+  background-size: cover;
+}
 
+.contact .contacts {
+  max-width: 800px;
+  text-align: center;
+}
 
-  .contact
-{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(https://medicalarrow.com/wp-content/uploads/2018/09/About-Us-1-1982x1024.jpg);
-    background-size: cover;
+.contact .contacts h2 {
+  font-size: 36px;
+  font-weight: 1000;
+  color: #2C7AFD;
+}
 
+.contact .contacts p {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #020f16;
+  text-align: justify;
 }
-.contact .contacts
-{
-    /* background-color: #CADAEE; */
-    max-width: 800px;
-    text-align:center;
-}
-.contact .contacts h2
-{
-    font-size: 36px;
-    font-weight: 1000;
-    /* color: hsl(242, 96%, 47%); */
-    color: #2C7AFD;
-    
-}
-.contact .contacts p
-{
-    margin-top: 50px;
-    font-weight: 600;
-    font-size:20px;
-    color: #020f16;
-    text-align: justify;
-}
+
 .button {
-    margin-top: 30px;
-    background-color: red;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    /* margin: 4px 2px; */
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
+  margin-top: 30px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+/* Media query for screens smaller than 1024px */
+@media screen and (max-width: 1023px) {
+  .contact {
+      padding: 20px; /* Adjust padding for smaller screens */
   }
-  
-  .button:hover {opacity: 1}
+
+  .contact .contacts {
+      max-width: 600px; /* Adjust max-width for smaller screens */
+  }
+
+  .contact .contacts h2 {
+      font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .contact .contacts p {
+      font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .button {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */
 
 
-  .text-blk {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    line-height: 25px;
-  }
-  
-  .responsive-container-block {
-    min-height: 75px;
-    height: fit-content;
-    width: 100%;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    justify-content: flex-start;
-  }
-  
-  .responsive-container-block.bigContainer {
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    /* background-color: #575a7b; */
-    /* background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb29.png"); */
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: cover;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-  }
-  
+/* Default styles */
+.text-blk {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.responsive-container-block.bigContainer {
+  padding: 10px 30px;
+}
+
+.responsive-container-block.Container {
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 150px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.text-blk.heading {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.text-blk.subHeading {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 60px;
+}
+
+/* Media Query for screens with a maximum width of 768px (e.g., tablets) */
+@media screen and (max-width: 768px) {
   .responsive-container-block.Container {
-    max-width: 800px;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-bottom: 150px;
-    margin-left: auto;
-    background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    margin: 50px auto;
   }
-  
+
   .text-blk.heading {
-    font-size: 36px;
-    line-height: 45px;
-    font-weight: 800;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
+    font-size: 24px;
+    line-height: 32px;
   }
-  
+
   .text-blk.subHeading {
-    text-align: center;
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 60px;
-    margin-left: 0px;
+    font-size: 16px;
+    line-height: 24px;
   }
-  
-  
+}
+
+/* Media Query for screens with a maximum width of 480px (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+  .responsive-container-block.Container {
+    margin: 30px auto;
+  }
+
+  .responsive-container-block.bigContainer {
+    margin: 30px auto;
+    margin-top: 1500px;
+  }
+
+  .text-blk.heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text-blk.subHeading {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
   
   
   @media (max-width: 768px) {
